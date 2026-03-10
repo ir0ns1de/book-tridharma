@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Koleksi Buku Karangan Fitrah Izul Falaq</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Koleksi Buku Karangan Fitrah Izul Falaq berisi karya, riset, dan pengembangan media pembelajaran di bidang teknologi pendidikan.">
+    <meta name="keywords"
+        content="Fitrah Izul Falaq, koleksi buku, buku pendidikan, teknologi pendidikan, media pembelajaran, penelitian pendidikan">
+    <meta name="author" content="Fitrah Izul Falaq">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Koleksi Buku Karangan Fitrah Izul Falaq">
+    <meta property="og:description"
+        content="Jelajahi koleksi buku, riset, dan inovasi teknologi pendidikan karya Fitrah Izul Falaq.">
+    <meta property="og:image" content="https://dummyimage.com/1200x630/dbeafe/1d4ed8&text=Buku+Karya+Fitrah+Izul+Falaq">
+    <meta property="og:image:alt" content="Buku Karya Fitrah Izul Falaq">
+    <meta property="og:locale" content="id_ID">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Koleksi Buku Karangan Fitrah Izul Falaq">
+    <meta name="twitter:description"
+        content="Kumpulan karya Fitrah Izul Falaq tentang teknologi pendidikan, media pembelajaran, dan penelitian pendidikan.">
+    <meta name="twitter:image"
+        content="https://dummyimage.com/1200x630/dbeafe/1d4ed8&text=Buku+Karya+Fitrah+Izul+Falaq">
+    <meta name="twitter:image:alt" content="Buku Karya Fitrah Izul Falaq">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Inter:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-top: #eff6ff;
+            --bg-bottom: #dbeafe;
+            --surface: rgba(255, 255, 255, 0.72);
+            --surface-strong: rgba(255, 255, 255, 0.9);
+            --border: rgba(96, 165, 250, 0.24);
+            --text: #0f172a;
+            --muted: #475569;
+            --primary: #2563eb;
+            --primary-strong: #1d4ed8;
+            --accent: #38bdf8;
+            --shadow: 0 24px 60px rgba(37, 99, 235, 0.18);
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Inter', sans-serif;
+            background:
+                radial-gradient(circle at top left, rgba(56, 189, 248, 0.28), transparent 32%),
+                radial-gradient(circle at bottom right, rgba(37, 99, 235, 0.18), transparent 26%),
+                linear-gradient(180deg, var(--bg-top), var(--bg-bottom));
+            color: var(--text);
+            overflow-x: hidden;
+        }
+
+        body::before,
+        body::after {
+            content: "";
+            position: fixed;
+            border-radius: 999px;
+            pointer-events: none;
+            filter: blur(10px);
+            z-index: 0;
+        }
+
+        body::before {
+            width: 340px;
+            height: 340px;
+            top: -100px;
+            left: -80px;
+            background: rgba(125, 211, 252, 0.34);
+        }
+
+        body::after {
+            width: 420px;
+            height: 420px;
+            right: -120px;
+            bottom: -160px;
+            background: rgba(96, 165, 250, 0.22);
+        }
+
+        /* ===== CONTAINER ===== */
+
+        #world {
+            position: fixed;
+            inset: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 32px 20px;
+            z-index: 1;
+        }
+
+        .hero-panel {
+            position: relative;
+            width: min(1100px, calc(100% - 32px));
+            padding: 42px 34px 36px;
+            border-radius: 32px;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0.68));
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow);
+            backdrop-filter: blur(18px);
+            overflow: hidden;
+        }
+
+        .hero-panel::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(191, 219, 254, 0.45), transparent 48%);
+            pointer-events: none;
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 16px;
+            border-radius: 999px;
+            background: rgba(219, 234, 254, 0.92);
+            color: var(--primary-strong);
+            font-size: 0.88rem;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            box-shadow: inset 0 0 0 1px rgba(96, 165, 250, 0.16);
+        }
+
+        /* ===== TITLE ===== */
+
+        h1 {
+            font-family: 'Merriweather', serif;
+            font-size: clamp(2.6rem, 5vw, 4.6rem);
+            margin: 22px 0 14px;
+            letter-spacing: -0.03em;
+            line-height: 1.08;
+        }
+
+        .subtitle {
+            color: var(--muted);
+            max-width: 760px;
+            margin: 0 auto;
+            font-size: 1.02rem;
+            line-height: 1.8;
+        }
+
+        /* ===== BOOK SHOWCASE ===== */
+
+        #books {
+            display: flex;
+            gap: 22px;
+            margin-top: 44px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .book {
+            position: relative;
+            width: 200px;
+            min-height: 238px;
+            background: linear-gradient(180deg, var(--surface-strong), var(--surface));
+            border: 1px solid rgba(148, 197, 255, 0.45);
+            border-radius: 24px;
+            padding: 24px 20px;
+            box-shadow: 0 18px 40px rgba(96, 165, 250, 0.16);
+            transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            text-align: left;
+            overflow: hidden;
+        }
+
+        .book::before {
+            content: "";
+            position: absolute;
+            top: -40px;
+            right: -24px;
+            width: 120px;
+            height: 120px;
+            border-radius: 999px;
+            background: rgba(191, 219, 254, 0.65);
+            transition: transform .35s ease;
+        }
+
+        .book:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 28px 50px rgba(37, 99, 235, 0.22);
+            border-color: rgba(59, 130, 246, 0.45);
+        }
+
+        .book:hover::before {
+            transform: scale(1.1);
+        }
+
+        .book-icon {
+            position: relative;
+            z-index: 1;
+            display: grid;
+            place-items: center;
+            width: 62px;
+            height: 62px;
+            border-radius: 18px;
+            font-size: 34px;
+            margin-bottom: 22px;
+            background: linear-gradient(135deg, rgba(219, 234, 254, 0.95), rgba(186, 230, 253, 0.95));
+            box-shadow: inset 0 0 0 1px rgba(96, 165, 250, 0.18);
+        }
+
+        .book-title {
+            position: relative;
+            z-index: 1;
+            font-weight: 700;
+            font-size: 1rem;
+            margin-bottom: 8px;
+        }
+
+        .book-desc {
+            position: relative;
+            z-index: 1;
+            font-size: 0.9rem;
+            color: var(--muted);
+            line-height: 1.6;
+        }
+
+        /* ===== BUTTON ===== */
+
+        #portal {
+            margin-top: 42px;
+            padding: 17px 34px;
+            border-radius: 999px;
+            background: linear-gradient(135deg, var(--accent), var(--primary));
+            color: white;
+            font-weight: 700;
+            font-size: 0.98rem;
+            letter-spacing: 0.01em;
+            cursor: pointer;
+            box-shadow: 0 18px 38px rgba(37, 99, 235, 0.28);
+            transition: transform .3s ease, box-shadow .3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        #portal::after {
+            content: "→";
+            font-size: 1.1rem;
+        }
+
+        #portal:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 24px 44px rgba(29, 78, 216, 0.34);
+        }
+
+        /* ===== FLOATING ACADEMIC ICONS ===== */
+
+        .icon {
+            position: absolute;
+            font-size: 1.6rem;
+            opacity: .22;
+            animation: float 9s ease-in-out infinite;
+            filter: saturate(0.8);
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0)
+            }
+
+            50% {
+                transform: translateY(-25px)
+            }
+
+            100% {
+                transform: translateY(0)
+            }
+        }
+
+        /* ===== IFRAME ===== */
+
+        iframe {
+            position: fixed;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: none;
+            z-index: 10;
+        }
+
+        .fade-out {
+            animation: fade 1s forwards;
+        }
+
+        @keyframes fade {
+            to {
+                opacity: 0;
+                transform: scale(1.1);
+                filter: blur(10px);
+            }
+        }
+
+        @media (max-width: 768px) {
+            #world {
+                justify-content: flex-start;
+                overflow-y: auto;
+            }
+
+            .hero-panel {
+                width: min(100%, calc(100% - 12px));
+                padding: 28px 20px 26px;
+                border-radius: 24px;
+                margin: 16px 0 28px;
+            }
+
+            h1 {
+                font-size: 2.2rem;
+            }
+
+            .subtitle {
+                font-size: 0.95rem;
+            }
+
+            #books {
+                gap: 16px;
+                margin-top: 32px;
+            }
+
+            .book {
+                width: min(100%, 280px);
+                min-height: 212px;
+            }
+
+            #portal {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="world">
+        <div class="hero-panel">
+            <div class="eyebrow">Koleksi Buku Fitrah Izul Falaq</div>
+
+            <h1>Deseminasi Karya</h1>
+            <h2>Fitrah Izul Falaq - Teknologi Pendidikan Vokasional</h2>
+
+            <p class="subtitle">
+                Koleksi karya, riset, dan pengembangan media pembelajaran
+                oleh <b>Fitrah Izul Falaq</b>.
+                Eksplorasi buku, materi, dan inovasi teknologi pendidikan.
+            </p>
+
+            <div id="books">
+
+                <div class="book">
+                    <div class="book-icon">📘</div>
+                    <div class="book-title">Media Pembelajaran</div>
+                    <div class="book-desc">Desain visual, interaksi, dan pengembangan media belajar yang lebih efektif.
+                    </div>
+                </div>
+
+                <div class="book">
+                    <div class="book-icon">💻</div>
+                    <div class="book-title">Teknologi Pendidikan</div>
+                    <div class="book-desc">Eksplorasi inovasi digital learning untuk pengalaman belajar yang lebih
+                        modern.</div>
+                </div>
+
+                <div class="book">
+                    <div class="book-icon">📊</div>
+                    <div class="book-title">Penelitian Pendidikan</div>
+                    <div class="book-desc">Metode, analisis, dan temuan riset pendidikan yang aplikatif dan relevan.
+                    </div>
+                </div>
+
+                <div class="book">
+                    <div class="book-icon">🧠</div>
+                    <div class="book-title">Model Pembelajaran</div>
+                    <div class="book-desc">Strategi pedagogi modern untuk pembelajaran yang aktif, adaptif, dan terukur.
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="portal">Buka Koleksi Buku</div>
+        </div>
+
+    </div>
+
+    <iframe id="questFrame"></iframe>
+
+    <script>
+
+        const world = document.getElementById("world")
+        const portal = document.getElementById("portal")
+        const iframe = document.getElementById("questFrame")
+
+        /* floating academic icons */
+
+        const icons = ["📚", "📖", "🧠", "💻", "📊", "🧪", "🧬", "📝"]
+
+        for (let i = 0; i < 25; i++) {
+
+            let icon = document.createElement("div")
+            icon.className = "icon"
+            icon.textContent = icons[Math.floor(Math.random() * icons.length)]
+
+            icon.style.left = Math.random() * 100 + "%"
+            icon.style.top = Math.random() * 100 + "%"
+
+            world.appendChild(icon)
+
+        }
+
+        /* open bookcase */
+
+        portal.onclick = () => {
+
+            world.classList.add("fade-out")
+
+            setTimeout(() => {
+
+                world.style.display = "none"
+                iframe.src = "https://fliphtml5.com/bookcase/jppcx/"
+                iframe.style.display = "block"
+
+            }, 1000)
+
+        }
+
+    </script>
+
+</body>
+
+</html>
